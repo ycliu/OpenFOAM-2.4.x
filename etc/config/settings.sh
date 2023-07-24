@@ -242,10 +242,10 @@ case "${foamCompiler}" in
 OpenFOAM | ThirdParty)
     case "$WM_COMPILER" in
     Gcc | Gcc++0x | Gcc48 | Gcc48++0x)
-        gcc_version=gcc-4.8.2
-        gmp_version=gmp-5.1.2
-        mpfr_version=mpfr-3.1.2
-        mpc_version=mpc-1.0.1
+        gcc_version=gcc-7.5.0
+        gmp_version=gmp-5.1.3
+        mpfr_version=mpfr-3.1.6
+        mpc_version=mpc-1.0.3
         ;;
     Gcc49 | Gcc49++0x)
         gcc_version=gcc-4.9.0
@@ -376,7 +376,7 @@ SYSTEMOPENMPI)
     ;;
 
 OPENMPI)
-    export FOAM_MPI=openmpi-1.8.5
+    export FOAM_MPI=openmpi-2.1.6
     # optional configuration tweaks:
     _foamSource `$WM_PROJECT_DIR/bin/foamEtcFile config/openmpi.sh`
 

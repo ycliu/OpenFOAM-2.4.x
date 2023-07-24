@@ -59,7 +59,7 @@ foamInstall=$HOME/$WM_PROJECT
 
 #- Compiler location:
 #    foamCompiler= system | ThirdParty (OpenFOAM)
-foamCompiler=system
+foamCompiler=ThirdParty
 
 #- Compiler:
 #    WM_COMPILER = Gcc | Gcc45 | Gcc46 | Gcc47 | Clang | Icc (Intel icc)
@@ -81,7 +81,7 @@ export WM_COMPILE_OPTION=Opt
 #- MPI implementation:
 #    WM_MPLIB = SYSTEMOPENMPI | OPENMPI | SYSTEMMPI | MPICH | MPICH-GM | HPMPI
 #               | MPI | QSMPI | SGIMPI
-export WM_MPLIB=SYSTEMOPENMPI
+export WM_MPLIB=OPENMPI
 
 #- Operating System:
 #    WM_OSTYPE = POSIX | ???
